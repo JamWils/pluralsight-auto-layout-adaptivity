@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="H1p-Uh-vWS">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Master-->
+        <scene sceneID="pY4-Hu-kfo">
+            <objects>
+                <navigationController title="Master" id="RMx-3f-FxP" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Pmd-2v-anx">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="RjB-NG-AoD" kind="relationship" relationship="rootViewController" id="VZg-Y2-hp2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8fS-aE-onr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-38" y="-630"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="eBQ-jr-74u">
+            <objects>
+                <viewController id="RjB-NG-AoD" customClass="MainViewController" customModule="Collaborate" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cpY-eh-Nsa"/>
+                        <viewControllerLayoutGuide type="bottom" id="nKn-mf-5Y9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Vis-As-seo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ef0-w5-l2j">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PartnerInCrime" translatesAutoresizingMaskIntoConstraints="NO" id="OZz-0D-cCy">
+                                        <rect key="frame" x="98.5" y="28" width="178" height="178"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="OZz-0D-cCy" secondAttribute="height" multiplier="1:1" id="ugh-aC-Pnj"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ild-1q-tcy">
+                                        <rect key="frame" x="50" y="284" width="275" height="30"/>
+                                        <state key="normal" title="COLLABORATORS"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QMr-B9-NTd">
+                                        <rect key="frame" x="50" y="334" width="275" height="30"/>
+                                        <state key="normal" title="GOALS"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Suy-Rd-GGE">
+                                        <rect key="frame" x="50" y="434" width="275" height="30"/>
+                                        <state key="normal" title="MESSAGES"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BsK-3P-eFd">
+                                        <rect key="frame" x="50" y="384" width="275" height="30"/>
+                                        <state key="normal" title="JOBS"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TIf-Lf-zxH">
+                                        <rect key="frame" x="50" y="484" width="275" height="30"/>
+                                        <state key="normal" title="SETTINGS"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ke1-Zp-Noh">
+                                        <rect key="frame" x="50" y="534" width="275" height="30"/>
+                                        <state key="normal" title="LOGOUT"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="enT-7d-4Z9">
+                                        <rect key="frame" x="50" y="234" width="275" height="30"/>
+                                        <state key="normal" title="PROFILE"/>
+                                        <connections>
+                                            <segue destination="vC3-pB-5Vb" kind="showDetail" identifier="ShowProfile" id="uBb-Fg-Vub"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="ild-1q-tcy" firstAttribute="centerX" secondItem="OZz-0D-cCy" secondAttribute="centerX" id="4cy-MX-Y1L"/>
+                                    <constraint firstItem="ke1-Zp-Noh" firstAttribute="width" secondItem="enT-7d-4Z9" secondAttribute="width" id="5UP-wM-mWI"/>
+                                    <constraint firstItem="QMr-B9-NTd" firstAttribute="width" secondItem="enT-7d-4Z9" secondAttribute="width" id="6G2-5l-MyN"/>
+                                    <constraint firstAttribute="trailing" secondItem="enT-7d-4Z9" secondAttribute="trailing" constant="50" id="6mM-o3-98O"/>
+                                    <constraint firstItem="TIf-Lf-zxH" firstAttribute="width" secondItem="enT-7d-4Z9" secondAttribute="width" id="71e-Ak-0gX"/>
+                                    <constraint firstItem="TIf-Lf-zxH" firstAttribute="centerX" secondItem="OZz-0D-cCy" secondAttribute="centerX" id="8wO-Wf-538"/>
+                                    <constraint firstItem="OZz-0D-cCy" firstAttribute="top" secondItem="Ef0-w5-l2j" secondAttribute="top" constant="28" id="9p8-xQ-MAF"/>
+                                    <constraint firstItem="enT-7d-4Z9" firstAttribute="top" secondItem="OZz-0D-cCy" secondAttribute="bottom" constant="28" id="AUE-wo-kAm"/>
+                                    <constraint firstAttribute="bottom" secondItem="ke1-Zp-Noh" secondAttribute="bottom" constant="28" id="E3z-pk-HNp"/>
+                                    <constraint firstItem="ild-1q-tcy" firstAttribute="top" secondItem="enT-7d-4Z9" secondAttribute="bottom" constant="20" id="GJW-4c-sIw"/>
+                                    <constraint firstItem="BsK-3P-eFd" firstAttribute="top" secondItem="QMr-B9-NTd" secondAttribute="bottom" constant="20" id="RDO-i1-oW5"/>
+                                    <constraint firstItem="ke1-Zp-Noh" firstAttribute="centerX" secondItem="OZz-0D-cCy" secondAttribute="centerX" id="Ugc-IU-zgB"/>
+                                    <constraint firstItem="ke1-Zp-Noh" firstAttribute="top" secondItem="TIf-Lf-zxH" secondAttribute="bottom" constant="20" id="ckc-bc-CEs"/>
+                                    <constraint firstItem="ild-1q-tcy" firstAttribute="width" secondItem="enT-7d-4Z9" secondAttribute="width" id="f6s-gl-Igf"/>
+                                    <constraint firstItem="TIf-Lf-zxH" firstAttribute="top" secondItem="Suy-Rd-GGE" secondAttribute="bottom" constant="20" id="gqb-Ez-VkX"/>
+                                    <constraint firstItem="Suy-Rd-GGE" firstAttribute="top" secondItem="BsK-3P-eFd" secondAttribute="bottom" constant="20" id="io8-sl-mk0"/>
+                                    <constraint firstItem="BsK-3P-eFd" firstAttribute="width" secondItem="enT-7d-4Z9" secondAttribute="width" id="it3-pJ-Ra0"/>
+                                    <constraint firstItem="enT-7d-4Z9" firstAttribute="centerX" secondItem="OZz-0D-cCy" secondAttribute="centerX" id="jIq-4o-g0I"/>
+                                    <constraint firstItem="enT-7d-4Z9" firstAttribute="leading" secondItem="Ef0-w5-l2j" secondAttribute="leading" constant="50" id="kg8-Pg-Hfg"/>
+                                    <constraint firstItem="OZz-0D-cCy" firstAttribute="centerX" secondItem="Ef0-w5-l2j" secondAttribute="centerX" id="o6v-e8-9EH"/>
+                                    <constraint firstItem="BsK-3P-eFd" firstAttribute="centerX" secondItem="OZz-0D-cCy" secondAttribute="centerX" id="pQp-RE-qlv"/>
+                                    <constraint firstItem="Suy-Rd-GGE" firstAttribute="width" secondItem="enT-7d-4Z9" secondAttribute="width" id="sG9-7h-4hj"/>
+                                    <constraint firstItem="QMr-B9-NTd" firstAttribute="centerX" secondItem="OZz-0D-cCy" secondAttribute="centerX" id="u2H-au-HW7"/>
+                                    <constraint firstItem="Suy-Rd-GGE" firstAttribute="centerX" secondItem="OZz-0D-cCy" secondAttribute="centerX" id="vWK-2s-cHk"/>
+                                    <constraint firstItem="QMr-B9-NTd" firstAttribute="top" secondItem="ild-1q-tcy" secondAttribute="bottom" constant="20" id="vuE-ei-hj0"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.13725490196078433" green="0.13725490196078433" blue="0.13725490196078433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ef0-w5-l2j" firstAttribute="leading" secondItem="Vis-As-seo" secondAttribute="leading" id="ULa-tQ-19i"/>
+                            <constraint firstAttribute="trailing" secondItem="Ef0-w5-l2j" secondAttribute="trailing" id="cSS-AI-2bd"/>
+                            <constraint firstItem="nKn-mf-5Y9" firstAttribute="top" secondItem="Ef0-w5-l2j" secondAttribute="bottom" id="dHW-Sx-WJh"/>
+                            <constraint firstItem="Ef0-w5-l2j" firstAttribute="top" secondItem="Vis-As-seo" secondAttribute="top" id="vUm-oa-pmc"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="woB-I9-ZH3"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <segue destination="vC3-pB-5Vb" kind="showDetail" identifier="ShowDetail" id="H8A-R1-6AM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1X7-ci-yhO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="700" y="-628"/>
+        </scene>
+        <!--Detail-->
+        <scene sceneID="yUG-lL-AsK">
+            <objects>
+                <viewController title="Detail" id="JEX-9P-axG" customClass="DetailViewController" customModule="Collaborate" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SYR-Wa-9uf"/>
+                        <viewControllerLayoutGuide type="bottom" id="GAO-Cl-Wes"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="svH-Pt-448">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Detail" id="mOI-FS-AaM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FJe-Yq-33r" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="709" y="129"/>
+        </scene>
+        <!--Split View Controller-->
+        <scene sceneID="Nki-YV-4Qg">
+            <objects>
+                <splitViewController id="H1p-Uh-vWS" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <connections>
+                        <segue destination="RMx-3f-FxP" kind="relationship" relationship="masterViewController" id="BlO-5A-QYV"/>
+                        <segue destination="vC3-pB-5Vb" kind="relationship" relationship="detailViewController" id="Tll-UG-LXB"/>
+                    </connections>
+                </splitViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cZU-Oi-B1e" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-856" y="-330"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="r7l-gg-dq7">
+            <objects>
+                <navigationController id="vC3-pB-5Vb" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="DjV-YW-jjY">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="JEX-9P-axG" kind="relationship" relationship="rootViewController" id="GKi-kA-LjT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SLD-UC-DBI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-45" y="129"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="PartnerInCrime" width="178" height="178"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="H8A-R1-6AM"/>
+    </inferredMetricsTieBreakers>
+</document>
