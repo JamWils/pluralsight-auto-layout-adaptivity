@@ -22,4 +22,4 @@ This project has certain assets setup which were built in the **iOS Auto Layout 
 
 If you need the original images that are used in this project then you can go and visit the repository for the **iOS Auto Layout Fundamentals** course.
 
-[Fundamental's Course Repository]("https://github.com/JamWils/pluralsight-auto-layout")
+[Fundamental's Course Repository](https://github.com/JamWils/pluralsight-auto-layout)
